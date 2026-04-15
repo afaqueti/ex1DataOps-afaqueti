@@ -25,6 +25,10 @@ jobs:
 
       - name: Pytest - Run tests
         run: |
-            python -m pytest tests           
+            python -m pytest tests   
+            
+      - name: bandit - Security checks
+        run: |
+          python -m bandit -r app          
 
 
