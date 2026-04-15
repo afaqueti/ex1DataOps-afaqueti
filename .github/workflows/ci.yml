@@ -33,6 +33,9 @@ jobs:
 
       - name: mypy - Type checking
         run: |
-            python -m mypy app          
+            python -m mypy app      
+      - name: radon 
+        run: |
+            python -m radon cc app -a         
 
 
