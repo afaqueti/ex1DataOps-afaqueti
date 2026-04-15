@@ -29,6 +29,10 @@ jobs:
             
       - name: bandit - Security checks
         run: |
-          python -m bandit -r app          
+          python -m bandit -r app
+
+      - name: mypy - Type checking
+        run: |
+            python -m mypy app          
 
 
